@@ -11,6 +11,7 @@ from .simulation_operator import SimulationOperator
 from .strategy_bnh import StrategyBuyAndHold
 from .strategy_sma_0 import StrategySma0
 from .strategy_rsi import StrategyRsi
+from .strategy_momentum import StrategyMomentum
 from .virtual_market import VirtualMarket
 from .worker import Worker
 from .simulator import Simulator
@@ -36,6 +37,7 @@ __all__ = [
     "StrategyBuyAndHold",
     "StrategySma0",
     "StrategyRsi",
+    "StrategyMomentum",
     "VirtualMarket",
     "Worker",
     "Simulator",

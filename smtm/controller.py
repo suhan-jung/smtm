@@ -11,6 +11,7 @@ from . import (
     StrategyBuyAndHold,
     StrategySma0,
     StrategyRsi,
+    StrategyMomentum,
     Operator,
 )
 
@@ -48,6 +49,8 @@ class Controller:
             self.strategy = StrategySma0()
         elif strategy_num == 2:
             self.strategy = StrategyRsi()
+        elif strategy_num == 3:
+            self.strategy = StrategyMomentum()
         else:
             raise UserWarning(f"Invalid Strategy! {self.strategy}")
 

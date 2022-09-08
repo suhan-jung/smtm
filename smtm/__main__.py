@@ -46,7 +46,7 @@ python -m smtm --mode 5 --budget 50000 --title SMA_6H_week --strategy 1 --curren
     )
     parser.add_argument("--budget", help="budget", type=int, default=10000)
     parser.add_argument("--term", help="trading tick interval (seconds)", type=float, default="60")
-    parser.add_argument("--strategy", help="strategy 0: buy and hold, 1: sma0, 2: rsi", default="0")
+    parser.add_argument("--strategy", help="strategy 0: buy and hold, 1: sma0, 2: rsi, 3: momentum", default="0")
     parser.add_argument("--trader", help="trader 0: Upbit, 1: Bithumb", default="0")
     parser.add_argument("--currency", help="trading currency e.g.BTC", default="BTC")
     parser.add_argument("--config", help="mass simulation config file", default="")

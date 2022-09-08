@@ -20,6 +20,7 @@ from . import (
     StrategyBuyAndHold,
     StrategySma0,
     StrategyRsi,
+    StrategyMomentum,
     SimulationOperator,
     SimulationTrader,
     Analyzer,
@@ -135,6 +136,8 @@ class MassSimulator:
             strategy = StrategySma0()
         elif strategy_number == 2:
             strategy = StrategyRsi()
+        elif strategy_number == 3:
+            strategy = StrategyMomentum()
         else:
             raise UserWarning(f"Invalid Strategy! {strategy_number}")
 
@@ -268,6 +271,8 @@ class MassSimulator:
             strategy_name = StrategySma0.NAME
         elif strategy_number == 2:
             strategy_name = StrategyRsi.NAME
+        elif strategy_number == 3:
+            strategy_name = StrategyMomentum.NAME
         else:
             raise UserWarning(f"Invalid Strategy! {strategy_number}")
 
